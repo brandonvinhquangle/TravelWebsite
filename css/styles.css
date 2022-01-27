@@ -33,7 +33,8 @@ img {
 .container-fluid {
     width:100%;
     align-content: center;
-    margin:0px;
+    margin-left: -10px;
+    margin-right: -10px;
 }
 
 .carousel-inner {
@@ -42,6 +43,7 @@ img {
     justify-content: center;
     align-content: center;
     align-items: center;
+    margin:0px;
 }
 
 .footer {
