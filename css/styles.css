@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+img {
+    object-fit: cover;
+}
+
 .navbar.navbar-expand-lg.navbar-light.bg-light {
     background-color: white !important;
 }
@@ -16,10 +20,28 @@
     color: #fff;
 }
 
+.navbar-logo {
+    width: 120px;
+}
+
 .navbar-brand {
     font-family: cursive;
     margin-top: 5px;
     margin-bottom: 5px;
+}
+
+.container-fluid {
+    width:100%;
+    align-content: center;
+    margin:0px;
+}
+
+.carousel-inner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
 
 .footer {
@@ -52,12 +74,23 @@
 
 /* Mobile Styles */
 @media only screen and (max-width: 960px) {
-    
+    .carousel-inner {
+        height: fit-content !important;
+    }
+
+    .container-fluid {
+        max-height: 100%;
+    }
+
 }
   
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
     #navbarNav {
         justify-content: right;
+    }
+
+    .navbar-logo {
+        width: 30%;
     }
 }
