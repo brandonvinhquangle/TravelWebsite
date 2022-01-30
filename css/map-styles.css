@@ -116,4 +116,8 @@ li.active a, a:hover, a:active {
 .distribution-map .map-point:active .content a:hover, .distribution-map .map-point:active .content a:active, .distribution-map .map-point:focus .content a:hover, .distribution-map .map-point:focus .content a:active {
     color: #afe1fa;
 }
+
+.content-title {
+    font-size: 1.5em;
+}
   
