@@ -27,6 +27,7 @@ div, img, footer {
     justify-content: center;
     align-items: center;
     /* background-color: lightblue; */
+    margin-bottom: 25px;
 }
 
 .header-title {
