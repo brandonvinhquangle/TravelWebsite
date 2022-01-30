@@ -17,6 +17,7 @@ div, img, footer {
     box-sizing: border-box;
 }
 
+/* Places to Checkout: TODO: Fix Header*/
 .header {
     text-align: center;
     margin-bottom: 20px;
@@ -64,9 +65,13 @@ li.active a, a:hover, a:active {
     outline: none;
     z-index: 0;
     position: absolute;
+
+    /* Size of Circle on Map */
     width: 40px;
     height: 40px;
     border-radius: 20px;
+
+
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
     opacity: 0.8;
     transform: translate(-50%, -50%);
@@ -95,8 +100,11 @@ li.active a, a:hover, a:active {
     padding: 0;
     filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
     opacity: 1;
-    width: 250px;
-    height: 170px;
+    
+    /* Size of the Box for Content */
+    width: 300px;
+    height: 220px;
+    
     color: #e5e5e5;
     z-index: 1;
     transition: opacity 0.25s ease-in-out, width 0.25s ease-in-out, height 0.25s ease-in-out;
@@ -117,7 +125,84 @@ li.active a, a:hover, a:active {
     color: #afe1fa;
 }
 
+
+/* location Name */
 .content-title {
     font-size: 1.5em;
+    text-shadow: 3px 3px 3px #000000;
+}
+
+.peru {
+    background-image: url("https://static.onecms.io/wp-content/uploads/sites/28/2016/09/machu-PICCHU0916-2000.jpg");
+    background-position: center; 
+    background-size: cover;
+    background-blend-mode: overlay;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+
+.italy {
+    background-image: url("https://d2rdhxfof4qmbb.cloudfront.net/wp-content/uploads/20180301194244/Rome-Tile-1024x683.jpg");
+    background-position: center; 
+    background-size: cover;
+    background-blend-mode: overlay;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+
+.melbourne {
+    background-image: url("https://hips.hearstapps.com/hbz.h-cdn.co/assets/17/04/1485217607-hbz-melbourne-index_1.jpg");
+    background-position: center; 
+    background-size: cover;
+    background-blend-mode: overlay;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+
+.nyc {
+    background-image: url("https://media.istockphoto.com/photos/the-statue-of-liberty-with-the-one-world-trade-building-center-over-picture-id1169074379?k=20&m=1169074379&s=612x612&w=0&h=weuMjib73CU2dboPcjaiPr1bl5zk0YtviocdSka-ZeA=");
+    background-position: center; 
+    background-size: cover;
+    background-blend-mode: overlay;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+
+.greenland {
+    background-image: url("https://urszihlmann.com/images/greenland/Greenland-Trekking-Wilderness-Photography_758.jpg");
+    background-position: center; 
+    background-size: cover;
+    background-blend-mode: overlay;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
 }
   
+
+.capeTown {
+    background-image: url("https://businesstech.co.za/news/wp-content/uploads/2016/09/cape_town_aerial-e1473163874588.jpg");
+    background-position: center; 
+    background-size: cover;
+    background-blend-mode: overlay;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+
+.nam {
+    background-image: url("http://static.asiawebdirect.com/m/bangkok/portals/vietnam/homepage/ha-long-bay/pagePropertiesImage/ha-long-bay.jpg.jpg");
+    background-position: center; 
+    background-size: cover;
+    background-blend-mode: overlay;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+
+/* #box-overlay {
+    background-color: rgba(0,0,0,0.5);
+} */

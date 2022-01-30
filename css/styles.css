@@ -121,17 +121,6 @@ img {
     }
 
     .navbar-logo {
-        width: 30%;
-    }
-}
-
-/* Ultrawide Styles */
-@media only screen and (min-width: 961px) {
-    #navbarNav {
-        justify-content: right;
-    }
-
-    .navbar-logo {
-        width: 30%;
+        width: 25%;
     }
 }
