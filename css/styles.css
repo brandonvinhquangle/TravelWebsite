@@ -70,10 +70,7 @@ img {
     object-fit:fill;
     top: 0;
     left: 0;
-    /* min-height: 500px; */
     width:100%;
-    /* margin-left: -5px;
-    margin-right: -5px; */
 }
 
 .footer {
@@ -117,6 +114,17 @@ img {
 }
   
 /* Desktop Styles */
+@media only screen and (min-width: 961px) {
+    #navbarNav {
+        justify-content: right;
+    }
+
+    .navbar-logo {
+        width: 30%;
+    }
+}
+
+/* Ultrawide Styles */
 @media only screen and (min-width: 961px) {
     #navbarNav {
         justify-content: right;

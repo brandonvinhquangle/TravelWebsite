@@ -1,14 +1,8 @@
 html {
-    /* background: #1a1a1a; */
-    /* color: #e5e5e5; */
     text-align: center;
-    /* font-family: "Roboto", Helvetica, sans-serif; */
 }
   
 body {
-    /* max-width: 1200px; */
-    /* margin: 20px auto; */
-    /* padding: 0 100px; */
     overflow-x: hidden;
 }
   
@@ -22,56 +16,10 @@ div, img, footer {
     position: relative;
     box-sizing: border-box;
 }
-  
-h1, h2, h3, h4, h5, h6 {
-    margin-bottom: 20px;
-    /* text-transform: uppercase; */
-    /* font-family: "Roboto Condensed", Helvetica, sans-serif; */
-    /* font-weight: 300; */
-}
-  
-h1 {
+
+.header {
     text-align: center;
-    font-size: 36pt;
-}
-  
-/* h2 {
-    font-size: 24pt;
-}
-  
-h3 {
-    font-size: 18pt;
-}
-  
-h4 {
-    font-size: 16pt;
-}
-  
-h5 {
-    font-size: 14pt;
-}
-  
-h6 {
-    font-size: 12pt;
-}
-  
-p {
-    font-size: 12pt;
-    margin-bottom: 12pt;
-} */
-  
-strong {
-    /* font-weight: 900; */
-    /* font-family: "Roboto Condensed", Helvetica, sans-serif; */
-    color: #e5e5e5;
-}
-  
-a {
-    /* transition: color 0.25s ease-in-out; */
-    /* font-family: "Roboto Condensed", Helvetica, sans-serif; */
-    /* text-transform: uppercase; */
-    text-decoration: none;
-    /* color: #dff3fd; */
+    margin-bottom: 20px;
 }
 
 a:visited {
@@ -98,7 +46,7 @@ li.active a, a:hover, a:active {
   
 .distribution-map {
     position: relative;
-    width: 100%;
+    width: 90%;
     padding: 20px;
     box-sizing: border-box;
     margin: 0 auto;
@@ -147,8 +95,8 @@ li.active a, a:hover, a:active {
     padding: 0;
     filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
     opacity: 1;
-    width: 300px;
-    height: 220px;
+    width: 250px;
+    height: 170px;
     color: #e5e5e5;
     z-index: 1;
     transition: opacity 0.25s ease-in-out, width 0.25s ease-in-out, height 0.25s ease-in-out;
