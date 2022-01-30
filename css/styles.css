@@ -148,6 +148,7 @@ h1 {
     .carousel-inner {
         height: fit-content !important;
     }
+
 }
   
 /* Desktop Styles */
@@ -158,5 +159,17 @@ h1 {
 
     .navbar-logo {
         width: 25%;
+    }
+
+    /*About page*/
+
+    .about-card {
+        height: 700px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .about-container {
+        margin-top: 60px;
+        display: flex;
     }
 }
