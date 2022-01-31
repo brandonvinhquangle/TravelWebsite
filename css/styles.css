@@ -33,7 +33,7 @@ img {
     align-content: center;
     /* margin-left: -5px;
     margin-right: -5px; */
-    max-height: 800px;
+    /* max-height: 800px; */
 }
 
 .carousel-inner {
@@ -117,8 +117,6 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    bottom: 0;
 }
 
 .footer-item {
@@ -178,9 +176,10 @@ h1 {
         align-items: center;
     }
 
-    /* .footer {
-        clear: both;
-        position: absolute;
+    .footer {
+        /* position: fixed; */
+        /*TODO: PUSH TO BOTTOM OF PAGE JAVASCRIPT*/
         bottom: 0;
-    } */
+        width: 100%;
+    }
 }
