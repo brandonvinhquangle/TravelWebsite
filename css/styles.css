@@ -41,7 +41,10 @@ img {
 } */
 
 
-    .img 
+    /* img {
+        position: absolute;
+        object-fit: cover;
+    } */
 
 /* .carousel-inner {
     width: 100%;
