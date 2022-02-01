@@ -10,7 +10,9 @@
 }
 
 .flights-container {
-    display:flex
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 .airline-card {
@@ -35,6 +37,6 @@
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
     .flights-container {
-        width: 900 px;
+        width: 100%;
     }
 }
