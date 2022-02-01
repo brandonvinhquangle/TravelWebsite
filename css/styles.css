@@ -78,9 +78,35 @@ img {
     width: 100%;
     text-align: center;
     margin-top: 30px;
+    margin-bottom: -50px;
 }
 
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
 
+.input-group {
+    border-radius: 5%;
+}
+
+#Search {
+    background-color: rgb(239, 239, 239);
+}
+
+.information-container {
+    width: 90%;
+    height: 200px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.information-card {
+    height: 200px;
+    border: 1px black;
+}
 
 .footer {
     width: 100%;
@@ -138,23 +164,18 @@ img {
         margin-top: 3%;
     }
 
-    /*About page*/
-    .about-card {
-        height: 700px;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-    .about-container {
-        margin-top: 60px;
+    .information-container {
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
+    .information-card {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
     .footer {
-        /* position: fixed; */
         /*TODO: PUSH TO BOTTOM OF PAGE JAVASCRIPT*/
-        bottom: 0;
-        width: 100%;
     }
 }

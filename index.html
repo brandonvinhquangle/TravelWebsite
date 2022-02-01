@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/styles.css" />
   <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
@@ -74,37 +75,33 @@
         <br><br><br>
       </div>
     </div>
-    <div class = row>
-      <form>
-        <div class="input-group">
-          <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-          <input id="email" type="text" class="form-control" name="email" placeholder="Email">
-        </div>
-        <div class="input-group">
-          <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-          <input id="password" type="password" class="form-control" name="password" placeholder="Password">
-        </div>
-        <br>
-        <div class="input-group">
-          <span class="input-group-addon">Text</span>
-          <input id="msg" type="text" class="form-control" name="msg" placeholder="Additional Info">
-        </div>
-      </form>
-
-    </div>
-    <div class="row">
-      <div class="col-*-*">
-        <h2>Book Your First Trip!</h2>
-      </div>
-      <div class="col-*-*">
-        <h2>Change or Cancel Trip</h2> 
-      </div>
-      <div class="col-*-*">
-        <h2>Learn More</h2>
+    <div class = "row">
+      <div class="col-md-8">
+        <form>
+          <div class="input-group">
+            <input id="Search" type="text" class="form-control" name="search" placeholder="Search Destinations">
+            <div class="input-group-btn">
+              <button id="Search" class="btn btn-default" type="submit"><i class="fas fa-search"></i></button>
+            </div>
+          </div>
+        </form>
       </div>
     </div>
     <div class="row">
-      <!-- TODO -->
+      <div class=information-container>
+        <div class="information-card">
+          <h2>Book Your First Trip!</h2>
+          <p>Create a booking to start your travel journey</p> 
+        </div>
+        <div class="information-card">
+          <h2>Change or Cancel Trip</h2>
+          <p>Make updates to your itinerary or cancel a booking</p>
+        </div>
+        <div class="information-card">
+          <h2>Learn More</h2>
+          <p>Come explore the places you can travel to and flights you can take</p>
+        </div>
+      </div>
     </div>
   </div>
 
