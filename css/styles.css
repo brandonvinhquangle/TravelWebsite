@@ -31,31 +31,13 @@ img {
 .container-fluid {
     width:100%;
     align-content: center;
-    /* max-height: 800px; */
     padding: 0px;
 }
 
-/* .carousel-item img {
-    position: absolute;
+img {
     object-fit: cover;
-} */
-
-
-    /* img {
-        position: absolute;
-        object-fit: cover;
-    } */
-
-/* .carousel-inner {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    margin:0px;
-} */
-
-
+    width:100%;
+}
 
 .home-title {
     width: 100%;
