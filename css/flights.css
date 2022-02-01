@@ -4,13 +4,37 @@
     box-sizing: border-box
 }
 
+.header {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.flights-container {
+    display:flex
+}
+
+.airline-card {
+    width: 300px;
+    text-align: center;
+    margin: 20 20 20 20px;
+}
+
+.airline-card img {
+    display: block;
+    height: 200px;
+    width: 300px;
+    margin-top: 60px;
+}
+
 
 /* Mobile Styles */
 @media only screen and (max-width: 960px) {
-    
+
 }
   
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
-    
+    .flights-container {
+        width: 900 px;
+    }
 }
