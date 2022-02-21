@@ -15,6 +15,10 @@ function validateForm() {
     alert("Destination must be filled out");
     return false;
   }
+  else if (origin === destination) {
+    alert("Origin must be different than the destination")
+    return false;
+  }
 
   getCheapestFlight(origin, destination, currency);
 }
