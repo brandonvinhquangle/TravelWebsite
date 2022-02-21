@@ -81,18 +81,6 @@ img {
     text-decoration: none;
 }
 
-/* #card1 {
-    background-color: lightblue;
-}
-
-#card2 {
-    background-color: lightcoral;
-}
-
-#card3 {
-    background-color: lightgray;
-} */
-
 .footer {
     width: 100%;
     display: flex;
@@ -111,10 +99,6 @@ img {
     height: auto;
     border-radius: 100%;
     margin: 10px;
-}
-
-.footer-photo:hover {
-    width: 53px;
 }
 
 .footer-copyright {
