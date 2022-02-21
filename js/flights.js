@@ -1,3 +1,4 @@
+/* Event Listener for the Submit Form */
 document.getElementById("submit").addEventListener("click", validateForm);
 
 /* Function that Validates that the Form is Filled Out Correctly */
@@ -5,7 +6,7 @@ function validateForm() {
   let origin = document.forms["myForm"]["origin"].value;
   let destination = document.forms["myForm"]["destination"].value;
   let currency = document.forms["myForm"]["currency"].value;
-
+  
   if (origin === "") {
     alert("Origin must be filled out");
     return false;
@@ -29,10 +30,11 @@ function getCheapestFlight(origin, destination, currency) {
     }
   })
   .then(response => {
+    console.log("-------------------HERE--------------------");
     console.log(response);
-
+    
     /* Add to the Flight Data... */
-    let output = document.getElementById("flight-data");
+    // let output = document.getElementById("flight-data");
   })
   .catch(err => {
     console.error(err);
