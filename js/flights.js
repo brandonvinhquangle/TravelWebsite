@@ -52,10 +52,10 @@ document.getElementById("submit").addEventListener("click", function(event) {
       card += "<p class=\"flight-number\">Flight Number: #" + dest[i].flight_number + "</p>";
 
       // Departure Date
-      card += "<p class=\"departure-date\">Departure Date: " + dest[i].departure_at + "</p>";
+      card += "<p class=\"departure-date\">Departure Date: " + formatDate(dest[i].departure_at) + "</p>";
 
       // Return Date
-      card += "<p class=\"return-date\">Return Date: " + dest[i].return_at + "</p>";
+      card += "<p class=\"return-date\">Return Date: " + formatDate(dest[i].return_at) + "</p>";
       
       card += "</div></div>";
       results += card;
@@ -82,4 +82,16 @@ function getAirlineName(code, i) {
         document.getElementById("airName" + i).innerHTML = airline;
       })
       .catch(error => console.warn(error));
+}
+
+function formatDate (date) {
+  // Returns a formatted date string
+  dateObj = {
+    "year":date.substring(0,4),
+    "month":date.substring(5,7),
+    "day":date.substring(8,10),
+    "hour":date.substring(11,13),
+    "minute":date.substring(14,16)
+  }
+  return dateObj.month + "/" + dateObj.day + "/" + dateObj.year + " - " + dateObj.hour + ":" + dateObj.minute;
 }
