@@ -49,10 +49,12 @@ document.getElementById("submit").addEventListener("click", function(event) {
       card += "<p class=\"flight-number\">Flight Number: #" + dest[i].flight_number + "</p>";
 
       // Departure Date
-      card += "<p class=\"departure-date\">Departure Date: " + dest[i].departure_at + "</p>";
+      formattedDate = formatDate(dest[i].departure_at);
+      card += "<p class=\"departure-date\">Departure Date: " + formattedDate + "</p>";
 
       // Return Date
-      card += "<p class=\"return-date\">Return Date: " + dest[i].return_at + "</p>";
+      formattedRetDate = formatDate(dest[i].return_at);
+      card += "<p class=\"return-date\">Return Date: " + formattedRetDate + "</p>";
       
       card += "</div></div>";
       results += card;
@@ -75,4 +77,16 @@ function getAirlineName(code) {
         let airline = json[0].name;
         return airline;
       })
+}
+
+function formatDate (date) {
+  // Returns a formatted date string
+  dateObj = {
+    "year":date.substring(0,4),
+    "month":date.substring(5,7),
+    "day":date.substring(8,10),
+    "hour":date.substring(11,13),
+    "minute":date.substring(14,16)
+  }
+  return dateObj.month + "/" + dateObj.day + "/" + dateObj.year + "  " + dateObj.hour + ":" + dateObj.minute;
 }
