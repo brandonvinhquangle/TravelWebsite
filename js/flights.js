@@ -39,8 +39,11 @@ document.getElementById("submit").addEventListener("click", function(event) {
     
       // Airline
       let code = dest[i].airline;
-      let airline = getAirlineName(code).then(response => console.log(response));
-      card += "<h3 class=\"airline-title\">Airline: " + airline + "</h3>"
+      card += "<div id = \"airName" + i + "\"></div>"
+      getAirlineName(code, i).then(function(data) { 
+        console.log(data);
+        airline = data;
+      });
       
       // Price
       card += "<p class=\"price\">Ticket Price: $" + dest[i].price + ".00</p>";
@@ -61,9 +64,9 @@ document.getElementById("submit").addEventListener("click", function(event) {
     document.getElementById("flight-data").innerHTML = results;
   });
 });
-s
 
-function getAirlineName(code) {
+/* Returns the Airline Name */
+function getAirlineName(code, i) {
   return fetch("https://iata-and-icao-codes.p.rapidapi.com/airline?iata_code=" + code, {
         "method": "GET",
         "headers": {
@@ -73,8 +76,10 @@ function getAirlineName(code) {
       })
       .then((response) => response.json())
       .then(json => {
-        let airline = json[0].name;
-        return airline;
+        let airline = "<h3> Airline: "; 
+        airline += json[0].name;
+        airline += "</h3>"
+        document.getElementById("airName" + i).innerHTML = airline;
       })
       .catch(error => console.warn(error));
 }
