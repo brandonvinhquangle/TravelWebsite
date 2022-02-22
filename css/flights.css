@@ -9,6 +9,11 @@
     text-align: center;
 }
 
+.container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 .flights-container {
     width: 100%;
     justify-content: center;

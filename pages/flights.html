@@ -1,46 +1,49 @@
 <!DOCTYPE html>
 <html>
-    <!-- Head-->
-    <head>
-        <title>Bon Voyage: Flights</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="../css/styles.css"/>
-        <link rel="stylesheet" href="../css/flights.css">
-        <link rel="icon" href="../images/favicon.ico">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
+<!-- Head-->
 
-    <!-- Body-->
-    <body>
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
-            <a class="navbar-brand" href="../index.html"><img src="../images/logo.png" class="navbar-logo"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="locations.html">Locations</a></li>
-                    <li class="nav-item active"><a class="nav-link" href="flights.html">Flights<span class="sr-only">(current)</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                </ul>
-            </div>
-        </nav>
+<head>
+    <title>Bon Voyage: Flights</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/flights.css">
+    <link rel="icon" href="../images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
 
-        <!-- Header-->
-        <h1 class="header">Where Will You Fly Next? Bon Voyage.</h1>
+<!-- Body-->
 
-        <!--Content-->
-        <div class="container-fluid text-center">    
-            <div class="container">
-                <form name="myForm">
-                  <div class="form-group">
+<body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+        <a class="navbar-brand" href="../index.html"><img src="../images/logo.png" class="navbar-logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="locations.html">Locations</a></li>
+                <li class="nav-item active"><a class="nav-link" href="flights.html">Flights<span
+                            class="sr-only">(current)</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header-->
+    <h1 class="header">Where Will You Fly Next? Bon Voyage.</h1>
+
+    <!--Content-->
+    <div class="container-fluid text-center">
+        <div class="container">
+            <form name="myForm">
+                <div class="form-group">
                     <label for="origin">Origin:</label>
                     <select class="form-control" id="origin" name="origin">
                         <option>SLC</option>
@@ -55,8 +58,8 @@
                         <option>MCO</option>
                         <option>SEA</option>
                     </select>
-                  </div>
-                  <div class="form-group">
+                </div>
+                <div class="form-group">
                     <label for="destination">Destination:</label>
                     <select class="form-control" id="destination" name="destination">
                         <option>ATL</option>
@@ -71,8 +74,8 @@
                         <option>SEA</option>
                         <option>SLC</option>
                     </select>
-                  </div>
-                  <div class="form-group">
+                </div>
+                <div class="form-group">
                     <label for="currency">Currency:</label>
                     <select class="form-control" id="currency" name="currency">
                         <option>USD</option>
@@ -81,88 +84,93 @@
                         <option>EUR</option>
                         <option>VND</option>
                     </select>
-                  </div>
-                  <button class="btn btn-primary" id="submit">Submit</button>
-                </form>
-                <div id="flight-data"></div>
-              </div>
-          </div>
+                </div>
+                <button class="btn btn-primary" id="submit">Submit</button>
+            </form>
+            <div id="flight-data"></div>
+        </div>
+    </div>
 
-        <div class="container-fluid text-center">    
-            <div class="row">
-              <div class="col-md-4">
+    <div class="container-fluid text-center">
+        <div class="row">
+            <div class="col-md-4">
                 <a class="card-link" href="https://www.aa.com/homePage.do" target="_blank">
                     <div class="airline-card">
-                        <img src="https://www.jetblue.com/magnoliapublic/dam/ui-assets/imagery/trueblue/American-Airlines.jpg">
+                        <img
+                            src="https://www.jetblue.com/magnoliapublic/dam/ui-assets/imagery/trueblue/American-Airlines.jpg">
                         <h2 class="card-title">American Airlines</h2>
                     </div>
                 </a>
-              </div>
-              <div class="col-md-4"> 
+            </div>
+            <div class="col-md-4">
                 <a class="card-link" href="https://www.delta.com/" target="_blank">
                     <div class="airline-card">
-                        <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F28%2F2021%2F06%2F08%2Fdelta-plane-exterior-KNOWDELTA0621.jpg">
+                        <img
+                            src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F28%2F2021%2F06%2F08%2Fdelta-plane-exterior-KNOWDELTA0621.jpg">
                         <h2 class="card-title">Delta</h2>
                     </div>
                 </a>
-              </div>
-              <div class="col-md-4"> 
+            </div>
+            <div class="col-md-4">
                 <a class="card-link" href="https://www.emirates.com/us/english/" target="_blank">
                     <div class="airline-card">
-                        <img src="https://c.ekstatic.net/ecl/aircraft-exterior/boeing-777/emirates-boeing-777-300er-flying-above-sea-d600x400.jpg?h=xVDCnzToEwzxjvQouUMazQ">
+                        <img
+                            src="https://c.ekstatic.net/ecl/aircraft-exterior/boeing-777/emirates-boeing-777-300er-flying-above-sea-d600x400.jpg?h=xVDCnzToEwzxjvQouUMazQ">
                         <h2 class="card-title">Fly Emirates</h2>
                     </div>
                 </a>
-              </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                  <a class="card-link" href="https://www.virgingalactic.com/" target="_blank">
-                      <div class="airline-card">
-                          <img src="https://cdn.mos.cms.futurecdn.net/ZNQC65JKdVZu62fGaR8fcW.jpeg">
-                          <h2 class="card-title">Virgin Galactic</h2>
-                      </div>
-                  </a>
-                </div>
-                <div class="col-md-4"> 
-                  <a class="card-link" href="https://www.allegiantair.com/" target="_blank">
-                      <div class="airline-card">
-                          <img src="https://simpleflying.com/wp-content/uploads/2021/11/Allegiant-Air-Airbus-A320-214-N248NV.jpg">
-                          <h2 class="card-title">Allegiant</h2>
-                      </div>
-                  </a>
-                </div>
-                <div class="col-md-4"> 
-                  <a class="card-link" href="https://www.spacex.com/" target="_blank">
-                      <div class="airline-card">
-                          <img src="https://cdn.mos.cms.futurecdn.net/Rrfa4oEWQHekzXPW7K58fj.jpg">
-                          <h2 class="card-title">SpaceX</h2>
-                      </div>
-                  </a>
-                </div>
-              </div>
-          </div><br>
-
-        <!-- Footer-->
-        <div class="footer">
-            <div class="footer-item">
-                <a href="https://github.com/brandonvinhquangle/Travel_Website" target="_blank">
-                    <img src="../images/github-logo.png" class="footer-photo">
-                </a>
-                <p class="footer-copyright">Copyright &copy; Bon Voyage 2022</p>
             </div>
         </div>
+        <div class="row">
+            <div class="col-md-4">
+                <a class="card-link" href="https://www.virgingalactic.com/" target="_blank">
+                    <div class="airline-card">
+                        <img src="https://cdn.mos.cms.futurecdn.net/ZNQC65JKdVZu62fGaR8fcW.jpeg">
+                        <h2 class="card-title">Virgin Galactic</h2>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a class="card-link" href="https://www.allegiantair.com/" target="_blank">
+                    <div class="airline-card">
+                        <img
+                            src="https://simpleflying.com/wp-content/uploads/2021/11/Allegiant-Air-Airbus-A320-214-N248NV.jpg">
+                        <h2 class="card-title">Allegiant</h2>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a class="card-link" href="https://www.spacex.com/" target="_blank">
+                    <div class="airline-card">
+                        <img src="https://cdn.mos.cms.futurecdn.net/Rrfa4oEWQHekzXPW7K58fj.jpg">
+                        <h2 class="card-title">SpaceX</h2>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div><br>
 
-        <!-- Scripts-->
-        <script src="/js/flights.js"></script>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-            crossorigin="anonymous"></script>
-    </body>
+    <!-- Footer-->
+    <div class="footer">
+        <div class="footer-item">
+            <a href="https://github.com/brandonvinhquangle/Travel_Website" target="_blank">
+                <img src="../images/github-logo.png" class="footer-photo">
+            </a>
+            <p class="footer-copyright">Copyright &copy; Bon Voyage 2022</p>
+        </div>
+    </div>
+
+    <!-- Scripts-->
+    <script src="/js/flights.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
