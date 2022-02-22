@@ -70,9 +70,11 @@ function getAirlineName(code) {
           "x-rapidapi-host": "iata-and-icao-codes.p.rapidapi.com",
           "x-rapidapi-key": "d6f870f92fmsh06e8bba4585eef3p12aa21jsn04f58e145da2"
         }
-      }).then((response) => response.json())
+      })
+      .then((response) => response.json())
       .then(json => {
         let airline = json[0].name;
         return airline;
       })
+      .catch(error => console.warn(error));
 }
